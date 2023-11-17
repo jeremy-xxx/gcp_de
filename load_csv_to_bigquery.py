@@ -2,6 +2,7 @@ import os
 import glob
 import pandas as pd
 from google.cloud import bigquery
+import config
 
 # Initialize a BigQuery client to interact with the Google BigQuery service.
 # This requires having the GOOGLE_APPLICATION_CREDENTIALS environment variable set.
@@ -76,9 +77,9 @@ def main():
     The main entry point of the script.
     It sets up the dataset name, finds all CSV files in the 'data' folder, and loads each one into BigQuery.
     """
-    dataset_name = 'sensor_data'  # Name of the dataset in BigQuery.
-    data_folder = 'data'  # Directory containing CSV files.
-    csv_files = find_csv_files(data_folder)  # List of CSV file paths.
+    dataset_name = config.BIGQUERY_DATASET_NAME
+    data_folder = config.DATA_FOLDER
+    csv_files = find_csv_files(data_folder)
 
     for csv_file in csv_files:
         load_csv_to_bigquery(csv_file, dataset_name)
