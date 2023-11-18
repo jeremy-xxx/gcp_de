@@ -78,7 +78,7 @@ def main():
     The main entry point of the script.
     It sets up the dataset name, finds all CSV files in the 'data' folder, and loads each one into BigQuery.
     """
-    dataset_name = config.BIGQUERY_DATASET_NAME
+    dataset_name = config.DATASET_NAME
     data_folder = config.BATCH_DATA_FOLDER
     csv_files = find_csv_files(data_folder)
 

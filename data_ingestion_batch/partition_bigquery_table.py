@@ -5,7 +5,7 @@ import config
 client = bigquery.Client()
 
 # Set the dataset name where the tables are located
-dataset_name = config.BIGQUERY_DATASET_NAME
+dataset_name = config.DATASET_NAME
 dataset_ref = client.dataset(dataset_name)
 
 # Get a list of all tables in the dataset
