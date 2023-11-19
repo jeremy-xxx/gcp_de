@@ -16,8 +16,8 @@ publisher = pubsub_v1.PublisherClient()
 # Define the datasets and corresponding topics and sleep times
 datasets = [
     {'topic_id': config.PUBSUB_TOPIC1, 'csv_filename': 'dataset_gps.csv', 'sleep_time': 1},
-    {'topic_id': config.PUBSUB_TOPIC2, 'csv_filename': 'dataset_mpu_left.csv', 'sleep_time': 1},
-    {'topic_id': config.PUBSUB_TOPIC3, 'csv_filename': 'dataset_mpu_right.csv', 'sleep_time': 1}
+    {'topic_id': config.PUBSUB_TOPIC2, 'csv_filename': 'dataset_mpu_left.csv', 'sleep_time': 0.01},
+    {'topic_id': config.PUBSUB_TOPIC3, 'csv_filename': 'dataset_mpu_right.csv', 'sleep_time': 0.01}
 ]
 
 
