@@ -4,7 +4,7 @@ export REGION="us-central1"
 
 export SERVICE_ACCOUNT_NAME="service-account-gcp-de"
 
-export BUCKET_NAME="sensor_data"
+export BUCKET_NAME="UNIQUE_BUCKET_NAME"
 
 export PUBSUB_TOPIC1="gps"
 export PUBSUB_TOPIC2="mpu_left"
