@@ -1,8 +1,10 @@
 # GCP Data Engineering Guide
 
 ### Preparation
-Copy the `cloud_shell_scripts` folder to the Cloud Shell environment.
-Set the right PROJECT_ID in config.py and config.sh.
+- Set the right PROJECT_ID in config.py and config.sh.
+- Set a unique BUCKET_NAME in config.sh
+- Copy the `cloud_shell_scripts` folder to the Cloud Shell environment. Change the file permissions to make it executable. 
+
 
 ### 1. Create a Service Account and Assign Roles
 Navigate to the `cloud_shell_scripts` directory and execute:
