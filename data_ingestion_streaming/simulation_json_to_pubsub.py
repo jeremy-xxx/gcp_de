@@ -1,11 +1,14 @@
 import time
 import pandas as pd
 from google.cloud import pubsub_v1
-import config
 from datetime import datetime
 import json
 from concurrent.futures import ThreadPoolExecutor
-
+import sys
+from pathlib import Path
+parent_dir = Path(__file__).resolve().parents[1]
+sys.path.append(str(parent_dir))
+import config
 # Configure
 project_id = config.PROJECT_ID
 data_folder = config.STREAMING_DATA_FOLDER
