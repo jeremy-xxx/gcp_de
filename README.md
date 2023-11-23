@@ -31,11 +31,16 @@ Execute the following:
 ```
 
 ### 4. Create BigQuery Temporary Tables and Load CSV Data
-Locally run the `load_csv_to_bigquery.py` to batch load CSV files into temporary BigQuery tables.
+Run the `load_csv_to_bigquery.py` to batch load CSV files into temporary BigQuery tables.
+```sh
+python load_csv_to_bigquery.py
+```
 
 ### 5. Create and Populate BigQuery ODS Partitioned Tables
-Locally run the `partition_bigquery_table.py` to create ODS partitioned tables from temporary table data and delete the temporary tables afterward.
-
+Run the `partition_bigquery_table.py` to create ODS partitioned tables from temporary table data and delete the temporary tables afterward.
+```sh
+python partition_bigquery_table.py
+```
 ### 6. Create Real-time Dataflow Jobs
 Set up real-time Dataflow jobs to write data from Pub/Sub topics to Cloud Storage for backup and to BigQuery ODS partitioned tables by running:
 ```sh
