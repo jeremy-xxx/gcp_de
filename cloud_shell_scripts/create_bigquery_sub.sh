@@ -1,15 +1,15 @@
 #!/bin/bash
 source ./config.sh
 
-gcloud pubsub subscriptions create sub_to_bigquery \
+gcloud pubsub subscriptions create ${PUBSUB_TOPIC1}_to_bigquery \
     --topic=$PUBSUB_TOPIC1 \
     --bigquery-table=${PROJECT_ID}:${DATASET_NAME}.${BQ_TABLE_NAME1}
 
-gcloud pubsub subscriptions create sub_to_bigquery \
+gcloud pubsub subscriptions create ${PUBSUB_TOPIC2}_to_bigquery \
     --topic=$PUBSUB_TOPIC2 \
     --bigquery-table=${PROJECT_ID}:${DATASET_NAME}.${BQ_TABLE_NAME2}
 
-gcloud pubsub subscriptions create sub_to_bigquery \
+gcloud pubsub subscriptions create ${PUBSUB_TOPIC3}_to_bigquery \
     --topic=$PUBSUB_TOPIC3 \
     --bigquery-table=${PROJECT_ID}:${DATASET_NAME}.${BQ_TABLE_NAME3}
 
