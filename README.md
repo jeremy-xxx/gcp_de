@@ -50,5 +50,5 @@ Set up real-time Dataflow jobs to write data from Pub/Sub topics to Cloud Storag
 ### 7. Simulate IoT Device Data Streaming to Pub/Sub
 To simulate real-time JSON data streaming from IoT devices to Pub/Sub, use:
 ```sh
-simulation_json_to_pubsub.py
+python simulation_json_to_pubsub.py
 ```
