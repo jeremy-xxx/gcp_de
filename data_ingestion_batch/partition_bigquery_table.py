@@ -28,7 +28,7 @@ for table in tables:
         sql = f"""
         CREATE OR REPLACE TABLE `{table_id}`
         PARTITION BY TIMESTAMP_TRUNC(timestamp_formatted, DAY) AS
-        SELECT *, TIMESTAMP_SECONDS(CAST(timestamp AS INT64)) as timestamp_formatted
+        SELECT *, TIMESTAMP_SECONDS(CAST(timestamp AS INT64)) as timestamp_formatted, '' as data
         FROM `{temp_table_id}`;
         """
 
