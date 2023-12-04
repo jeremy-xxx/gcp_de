@@ -41,14 +41,33 @@ Run the `partition_bigquery_table.py` to create ODS partitioned tables from temp
 ```sh
 python partition_bigquery_table.py
 ```
-### 6. Create Real-time Dataflow Jobs
-Set up real-time Dataflow jobs to write data from Pub/Sub topics to Cloud Storage for backup and to BigQuery ODS partitioned tables by running:
+### 6. Create Cloud Storage subscription for each topic
+#### 6.1 [Grant the Storage Admin (roles/storage.admin) role to the Pub/Sub service account.](https://cloud.google.com/pubsub/docs/create-cloudstorage-subscription)
+#### 6.2 Execute the following:
+```sh
+./create_cloud_storage_sub.sh
+```
+
+### 7. Create Real-time Dataflow Jobs
+Set up real-time Dataflow jobs to write data from Pub/Sub topics to BigQuery ODS partitioned tables by running:
 ```sh
 ./run_dataflow_jobs.sh
 ```
 
-### 7. Simulate IoT Device Data Streaming to Pub/Sub
+### 8. Simulate IoT Device Data Streaming to Pub/Sub
 To simulate real-time JSON data streaming from IoT devices to Pub/Sub, use:
 ```sh
 python simulation_json_to_pubsub.py
+```
+
+### 9. Create scheduled sql job
+#### 9.1 Deploy cloud function
+Execute the following:
+```sh
+./deploy_cloud_function.sh
+```
+#### 9.2 Create cloud scheduler
+Execute the following:
+```sh
+./create_cloud_scheduler.sh
 ```
