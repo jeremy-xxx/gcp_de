@@ -5,6 +5,7 @@ gcloud scheduler jobs create http execute_sql \
     --schedule="0 1 * * *" \
     --uri="https://${REGION}-${PROJECT_ID}.cloudfunctions.net/execute_sql" \
     --http-method=GET \
-    --time-zone="America/Chicago"
+    --time-zone="America/Chicago" \
+    --location=${REGION}
 
 # test: gcloud scheduler jobs run execute_sql
