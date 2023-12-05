@@ -54,10 +54,10 @@ Set up real-time Dataflow jobs to write data from Pub/Sub topics to BigQuery ODS
 ./run_dataflow_jobs.sh
 ```
 
-### 8. Simulate IoT Device Data Streaming to Pub/Sub
-To simulate real-time JSON data streaming from IoT devices to Pub/Sub, use:
+### 8. Create Ads table
+Execute the following:
 ```sh
-python simulation_json_to_pubsub.py
+./create_ads_table.sh
 ```
 
 ### 9. Create scheduled sql job
@@ -70,4 +70,10 @@ Execute the following:
 Execute the following:
 ```sh
 ./create_cloud_scheduler.sh
+```
+
+### 10. Simulate IoT Device Data Streaming to Pub/Sub
+To simulate real-time JSON data streaming from IoT devices to Pub/Sub, use:
+```sh
+python simulation_json_to_pubsub.py
 ```
