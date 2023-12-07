@@ -1,6 +1,7 @@
 ## 1. Connect to BigQuery
 -   On the Home ribbon in Power BI Desktop, click  **Get Data**  and then  **More…**.
 -  In the open window, type “_bigquery_” into the search bar or select the  **Database** category on the left, then find and select  **Google BigQuery**. Click  **Connect**.
+
 ![enter image description here](https://blog.coupler.io/wp-content/uploads/2021/08/2-select-google-bigquery.png)
 - Now you need to connect BigQuery to Power BI. Click the **Sign in** button and follow the usual flow.![enter image description here](https://blog.coupler.io/wp-content/uploads/2021/08/3-sign-in-google-bigquery.png)
 -  A Navigator window will appear in which you need to choose a BigQuery Project, a dataset, and a table to load data from.
