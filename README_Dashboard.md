@@ -12,7 +12,9 @@ All your files and folders are presented as a tree in the file explorer. You can
 
 ## 3. Create a Dashboard
 
-After finishing the design of the report, simply choose **Pin to the dashboard** on the upper right of the toolbar to create a new or save to an existing dashboard.
+After finishing the design of the report, simply choose **Pin to the dashboard** on the upper right of the toolbar to create a new or save to an existing dashboard. 
+![enter image description here](https://learn.microsoft.com/en-us/power-bi/create-reports/media/service-dashboard-pin-live-tile-from-report/power-bi-pin.png)
 
 
 
+![enter image description here](https://learn.microsoft.com/en-us/power-bi/create-reports/media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page-dialog.png)
