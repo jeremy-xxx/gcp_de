@@ -9,7 +9,17 @@
 
 ## 2. Create Report
 
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
+### **Map**
+In order to create the map for location tracking, a **Map** is created by dragging the columns `latitude` and `longitude` into the corresponding fields. Then add the column `vehicle_id` into the **Filters on this visual** section, which allows for filtering to monitor specific vehicles.
+
+### **HDOP vs VDOP by Vehicle**
+For the HDOP vs VDOP scatter plot, assign the HDOP values to the X-axis and VDOP values to the Y-axis, differentiating data points by `vehicle_id`.
+
+### **Average Speed per Second by Vehicle**
+Plot the average speed per second by assigning `vehicle_id` to the category axis and average speed values to the value axis.
+
+### **Total Distance per Vehicle**
+To visualize the total distance, use a bar chart with `vehicle_id` on the category axis and total distance values on the value axis.
 
 ## 3. Create a Dashboard
 
